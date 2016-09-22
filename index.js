@@ -55,7 +55,7 @@ class Tabs extends Component {
         }
         
         if(this.state.keyboardUp) {
-            return null
+            return <View style={styles.hidden} />
         }
         
         return (
