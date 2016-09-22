@@ -53,6 +53,11 @@ class Tabs extends Component {
                 }
             });
         }
+        
+        if(this.state.keyboardUp) {
+            return null
+        }
+        
         return (
             <View style={[styles.tabbarView, this.props.style, this.state.keyboardUp && styles.hidden]}>
                 {React.Children.map(this.props.children.filter(c=>c),(el)=>
