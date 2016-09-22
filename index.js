@@ -54,10 +54,6 @@ class Tabs extends Component {
             });
         }
         
-        if(this.state.keyboardUp) {
-            return <View style={styles.hidden} />
-        }
-        
         return (
             <View style={[styles.tabbarView, this.props.style, this.state.keyboardUp && styles.hidden]}>
                 {React.Children.map(this.props.children.filter(c=>c),(el)=>
@@ -94,6 +90,8 @@ var styles = StyleSheet.create({
     },
     hidden: {
         height: 0,
+        padding: 0,
+        borderWidth: 0,
     },
 });
 
