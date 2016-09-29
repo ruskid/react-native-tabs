@@ -90,7 +90,8 @@ var styles = StyleSheet.create({
     },
     hidden: {
         height: 0,
-        padding: 0,
+        paddingTop: 0,
+        paddingBottom: 0,
         borderWidth: 0,
     },
 });
